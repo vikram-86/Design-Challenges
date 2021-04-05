@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  LoginScreen.swift
 //  A1
 //
 //  Created by Vikram on 04/04/2021.
@@ -7,15 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct LoginScreen: View {
     var body: some View {
-        Text("Hello, world!")
+        CircularProgress()
             .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LoginScreen()
     }
 }

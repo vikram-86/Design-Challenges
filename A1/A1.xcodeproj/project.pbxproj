@@ -8,18 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		AC12C424261A5E1C005A6491 /* A1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12C423261A5E1C005A6491 /* A1App.swift */; };
-		AC12C426261A5E1C005A6491 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12C425261A5E1C005A6491 /* ContentView.swift */; };
+		AC12C426261A5E1C005A6491 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12C425261A5E1C005A6491 /* LoginScreen.swift */; };
 		AC12C428261A5E1F005A6491 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC12C427261A5E1F005A6491 /* Assets.xcassets */; };
 		AC12C42B261A5E1F005A6491 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC12C42A261A5E1F005A6491 /* Preview Assets.xcassets */; };
+		AC12C43D261A633A005A6491 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12C43C261A633A005A6491 /* Color.swift */; };
+		AC12C443261A668F005A6491 /* CircularProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12C442261A668F005A6491 /* CircularProgress.swift */; };
+		AC12C447261A6EE6005A6491 /* ShadowWithBlurModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12C446261A6EE6005A6491 /* ShadowWithBlurModifier.swift */; };
+		AC12C44E261BA261005A6491 /* LoginScreenProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC12C44D261BA261005A6491 /* LoginScreenProgressView.swift */; };
+		ACC57330261BA9E200C2242B /* PrimaryCTAButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC5732F261BA9E200C2242B /* PrimaryCTAButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		AC12C420261A5E1C005A6491 /* A1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = A1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC12C423261A5E1C005A6491 /* A1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A1App.swift; sourceTree = "<group>"; };
-		AC12C425261A5E1C005A6491 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		AC12C425261A5E1C005A6491 /* LoginScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
 		AC12C427261A5E1F005A6491 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC12C42A261A5E1F005A6491 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC12C42C261A5E1F005A6491 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC12C43C261A633A005A6491 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		AC12C442261A668F005A6491 /* CircularProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgress.swift; sourceTree = "<group>"; };
+		AC12C446261A6EE6005A6491 /* ShadowWithBlurModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowWithBlurModifier.swift; sourceTree = "<group>"; };
+		AC12C44D261BA261005A6491 /* LoginScreenProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenProgressView.swift; sourceTree = "<group>"; };
+		ACC5732F261BA9E200C2242B /* PrimaryCTAButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryCTAButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,10 +62,11 @@
 		AC12C422261A5E1C005A6491 /* A1 */ = {
 			isa = PBXGroup;
 			children = (
-				AC12C423261A5E1C005A6491 /* A1App.swift */,
-				AC12C425261A5E1C005A6491 /* ContentView.swift */,
-				AC12C427261A5E1F005A6491 /* Assets.xcassets */,
-				AC12C42C261A5E1F005A6491 /* Info.plist */,
+				AC12C440261A666F005A6491 /* Shared */,
+				AC12C43A261A6329005A6491 /* Utility */,
+				AC12C438261A61F9005A6491 /* App */,
+				AC12C436261A61F1005A6491 /* Screens */,
+				AC12C433261A61D0005A6491 /* Resources */,
 				AC12C429261A5E1F005A6491 /* Preview Content */,
 			);
 			path = A1;
@@ -67,6 +78,114 @@
 				AC12C42A261A5E1F005A6491 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AC12C433261A61D0005A6491 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AC12C435261A61E9005A6491 /* Assets */,
+				AC12C434261A61E1005A6491 /* Plists */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		AC12C434261A61E1005A6491 /* Plists */ = {
+			isa = PBXGroup;
+			children = (
+				AC12C42C261A5E1F005A6491 /* Info.plist */,
+			);
+			path = Plists;
+			sourceTree = "<group>";
+		};
+		AC12C435261A61E9005A6491 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AC12C427261A5E1F005A6491 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		AC12C436261A61F1005A6491 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				AC12C44B261BA22D005A6491 /* LoginScreen */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		AC12C438261A61F9005A6491 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				AC12C423261A5E1C005A6491 /* A1App.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		AC12C43A261A6329005A6491 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				AC12C43B261A6330005A6491 /* Extensions */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		AC12C43B261A6330005A6491 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AC12C43C261A633A005A6491 /* Color.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		AC12C440261A666F005A6491 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				ACC5732E261BA9D400C2242B /* Controls */,
+				AC12C445261A6EBC005A6491 /* Modifiers */,
+				AC12C441261A6677005A6491 /* Views */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		AC12C441261A6677005A6491 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC12C442261A668F005A6491 /* CircularProgress.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AC12C445261A6EBC005A6491 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				AC12C446261A6EE6005A6491 /* ShadowWithBlurModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		AC12C44B261BA22D005A6491 /* LoginScreen */ = {
+			isa = PBXGroup;
+			children = (
+				AC12C44C261BA235005A6491 /* Views */,
+				AC12C425261A5E1C005A6491 /* LoginScreen.swift */,
+			);
+			path = LoginScreen;
+			sourceTree = "<group>";
+		};
+		AC12C44C261BA235005A6491 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AC12C44D261BA261005A6491 /* LoginScreenProgressView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ACC5732E261BA9D400C2242B /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				ACC5732F261BA9E200C2242B /* PrimaryCTAButton.swift */,
+			);
+			path = Controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +257,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC12C426261A5E1C005A6491 /* ContentView.swift in Sources */,
+				AC12C426261A5E1C005A6491 /* LoginScreen.swift in Sources */,
 				AC12C424261A5E1C005A6491 /* A1App.swift in Sources */,
+				AC12C447261A6EE6005A6491 /* ShadowWithBlurModifier.swift in Sources */,
+				AC12C44E261BA261005A6491 /* LoginScreenProgressView.swift in Sources */,
+				ACC57330261BA9E200C2242B /* PrimaryCTAButton.swift in Sources */,
+				AC12C43D261A633A005A6491 /* Color.swift in Sources */,
+				AC12C443261A668F005A6491 /* CircularProgress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +395,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"A1/Preview Content\"";
 				DEVELOPMENT_TEAM = A6LH7SM6VR;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = A1/Info.plist;
+				INFOPLIST_FILE = A1/Resources/Plists/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -293,7 +417,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"A1/Preview Content\"";
 				DEVELOPMENT_TEAM = A6LH7SM6VR;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = A1/Info.plist;
+				INFOPLIST_FILE = A1/Resources/Plists/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
